@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            margin: auto;
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            transition: 1s;
+        }
+        
+        .div1::before {
+            background-color: rgba(0, 0, 0, 0.267);
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            transition: 1s;
+            box-sizing: border-box;
+        }
+        
+        .div1:hover::before {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .div2 {
+            margin: auto;
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            transition: 1s;
+        }
+        
+        .div2::before {
+            background-color: rgba(0, 0, 0, 0.267);
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            transition: 1s;
+            box-sizing: border-box;
+            border-radius: 0 0 100% 0;
+        }
+        
+        .div2:hover::before {
+            width: 200px;
+            height: 200px;
+            top: 0;
+            border-radius: 0;
+        }
+        
+        .div3 {
+            margin: auto;
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            transition: 1s;
+        }
+        
+        .div3::before {
+            background-color: rgba(0, 0, 0, 0.267);
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            transition: 1s;
+            box-sizing: border-box;
+            top: 50%;
+            left: 50%;
+        }
+        
+        .div3:hover::before {
+            width: 200px;
+            height: 200px;
+            top: 0;
+            left: 0;
+        }
+        
+        .div4 {
+            margin: auto;
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            transition: 1s;
+        }
+        
+        .div4::before {
+            background-color: rgba(0, 0, 0, 0.267);
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            transition: 1s;
+            box-sizing: border-box;
+            top: 50%;
+            left: 50%;
+            border-radius: 100%;
+        }
+        
+        .div4:hover::before {
+            width: 200px;
+            height: 200px;
+            top: 0;
+            left: 0;
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</body>
+
+</html>
